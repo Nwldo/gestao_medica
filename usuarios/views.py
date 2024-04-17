@@ -35,7 +35,7 @@ def cadastro(request):
                 email=email,
                 password=senha,
             )
-            return redirect('usuarios/login')
+            return redirect('/usuarios/login')
         except:
             messages.add_message(request, constants.ERROR, 'Erro ao codastrar o usuário')
             return redirect('/usuarios/cadastro')

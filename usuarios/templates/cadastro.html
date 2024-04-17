@@ -30,57 +30,29 @@
           {% endif %}
           <br />
           <label for="">Username</label>
-          <input
-            type="text"
-            name="username"
-            id=""
-            class="form-control"
-            placeholder="Username ..."
-          />
+          <input type="text" name="username" id="" class="form-control" placeholder="Username ..."/>
           <br />
           <label for="">E-mail</label>
-          <input
-            type="text"
-            name="email"
-            id=""
-            placeholder="email@email.com"
-            class="form-control"
-          />
+          <input type="text" name="email" id="" placeholder="email@email.com" class="form-control"/>
           <br />
           <div class="row">
             <div class="col-md">
               <label for="">Senha</label>
-              <input
-                type="password"
-                name="senha"
-                class="form-control"
-                placeholder="Digite sua senha ..."
-              />
+              <input type="password" name="senha" class="form-control" placeholder="Digite sua senha ..."/>
             </div>
             <div class="col-md">
               <label for="">Confirmar senha</label>
-              <input
-                type="password"
-                name="confirmar_senha"
-                class="form-control"
-                placeholder="Digite sua senha novamente ..."
-                id=""
-              />
+              <input type="password" name="confirmar_senha" class="form-control" placeholder="Digite sua senha novamente ..." id=""/>
             </div>
           </div>
           <br />
-          <input
-            type="submit"
-            value="Cadastrar"
-            class="btn btn-success btn-dark-color"
-          />
+          <input type="submit" value="Cadastrar" class="btn btn-success btn-dark-color"/>
           <a href="{% url "login" %}" class="btn btn-dark-color-outline">Já possuo uma conta</a>
         </form>
       </div>
     </div>
     <div
-      class="col-md bg-main d-flex justify-content-center align-items-center"
-    >
+      class="col-md bg-main d-flex justify-content-center align-items-center">
       <img src="{% static "usuarios/img/ilustracao.png" %}" alt="" />
     </div>
   </div>
